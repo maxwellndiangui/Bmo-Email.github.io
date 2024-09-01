@@ -1,1 +1,1 @@
-# bmo-newsletter-email.github.io
+# bmo-email.github.io

@@ -28,49 +28,34 @@
                 }
             }
             /* mobile */
-            @media only screen and (max-width: 480px) {
-                .container{
+            @media only screen and (max-width: 500px) {
+                .container, .header, .discount, .airmiles, .savings, 
+                .shellmiles, .three-steps-header, .three-steps-content,
+                .learn-more, .contact, .cpl, .footer-row {
                     width: 100% !important;
+                    padding: 0 !important; /* Remove padding to prevent overflow */
                 }
-                .header{
-                    width: 100% !important;
+                img {
+                    height: auto !important;
                 }
-                .discount{
-                    width: 100% !important;
+                .cpl { /*Need to fix this according to the site - This is what is causing the email to not work on the minimized screen*/
                 }
-                .airmiles{
-                    width: 100% !important;
+                .contact-text1 {
+                    font-size: 13px !important;
                 }
-                .savings{
-                    width: 100% !important;
+                .contact-text2 {
+                    font-size: 13px !important;
                 }
-                .shellmiles{
-                    width: 100% !important;
-                }
-                .three-steps-header{
-                    width: 100% !important;
-                }
-                .three-steps-content{
-                    width: 100% !important;
-                }
-                .learn-more{
-                    width: 100% !important;
-                }
-                .contact{
-                    width: 100% !important;
-                }
-                .cpl{
-                    width: 100% !important;
-                }
-                .footer-row{
-                    width: 100% !important;
+                .contact-text3 {
+                    font-size: 13px !important;
                 }
             }
+
         </style>
 
     </head>
 
-    <body style="margin:0; padding:0; background-color:#F2F2F2;font-family:Arial,Helvetica,sans-serif !important">
+    <body style="margin:0; padding:0; background-color:#F2F2F2;font-family:Arial,Helvetica,sans-serif !important;">
         <!--Start HTML Email-->
         <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#F2F2F2">
             <tr>
@@ -85,7 +70,7 @@
                                             <td style="padding: 20px;">
                                                 <a href="#"><img width="140" style="width: 140px;" src="https://i.postimg.cc/HLhg6CLS/bmo-logo-min.png" alt="BMO LOGO"></a>
                                             </td>
-                                            <td align="right" style="font-size:11px;line-height:1.2em;padding:5px 20px 0 0;font-weight:bold;vertical-align:middle!important;color:#585858">
+                                            <td align="right" style="font-size:11px;line-height:1.2em;padding:5px 20px 0 0;font-weight:bold;vertical-align:middle!important;color:#585858 !important">
                                                 Exclusive offer for
                                                 <br>
                                                 BMO Debit Card cardholders
@@ -98,7 +83,7 @@
                             <!--Start Discount Row-->
                             <tr>
                                 <td>
-                                    <table class="discount" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="discount" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td align="center" style="font-weight:700;font-size:15px;line-height:1.2em;padding-right:20px;text-align:center;color:white;background-color:#005587;padding: 10px 40px 10px 40px;">
                                                 You can enjoy up to 7¢ off per litre until ​December ​31, ​2024 – one of the best fuel discounts in Canada.
@@ -111,7 +96,7 @@
                             <!--Start AirMiles Row-->
                             <tr>
                                 <td>
-                                    <table class="airmiles" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="airmiles" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td valign="top" align="center" style="padding: 40px 20px 20px 20px;font-size:35px;line-height:1.2em;font-weight:normal;color:#2d2d2d">
                                                 Fill up on savings with BMO and AIR MILES<span style="font-size:40%;line-height:1em;vertical-align:14px">®†</span>. <!--Span is used to markup any part of the document/text, this is because it can be easily styled-->
@@ -139,7 +124,7 @@
                             <!--Start Savings Row-->
                             <tr>
                                 <td>
-                                    <table class="savings" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="savings" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td width="20" valign="bottom"></td> <!--Create a white strip to act as a padding to push the table inwards from the left side-->
                                             <td width="20" height="1" style="height:1px;width:560px;padding:20px 15px 0px">
@@ -224,7 +209,7 @@
                             <!--Start Shell/AirMiles Row-->
                             <tr>
                                 <td>
-                                    <table class="shellmiles" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="shellmiles" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td valign="top" align="center" style="padding:0 0 30px 0">
                                                 <img width="130" style="width: 130px;" src="https://i.postimg.cc/LsXSksmY/airmiles-min.png" alt="SHELL/AIRMILES LOGO">
@@ -237,7 +222,7 @@
                             <!--Start 3Steps Header Row-->
                             <tr>
                                 <td>
-                                    <table class="three-steps-header" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="three-steps-header" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td valign="top" align="center" style="font-size:25px;padding: 0 0 24px 0 ;line-height:1.2em;font-weight:400;color:#414141">
                                                 Start saving at Shell in 3 easy steps:
@@ -250,7 +235,7 @@
                             <!--Start 3Steps Content Row-->
                             <tr>
                                 <td>
-                                    <table class="three-steps-content" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="three-steps-content" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td style="padding: 3px 0 0 20px;">
                                                 <img width="25" style="width: 25px;" src="https://i.postimg.cc/1tby3Zhg/number1-min.png" alt="NUMBER 1 PHOTO">
@@ -286,7 +271,7 @@
                             <!--Start Learn More Row-->
                             <tr>
                                 <td>
-                                    <table class="learn-more" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="learn-more" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td valign="top" align="center" style="padding:20px 0 35px 0">
                                                 <table cellpadding="0" cellspacing="0" border="0">
@@ -311,14 +296,14 @@
                             <!--Start Contact Row-->
                             <tr>
                                 <td>
-                                    <table class="contact" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #0079c1;" role="presentation">
+                                    <table class="contact" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #0079c1;" role="presentation">
                                         <tr>
                                             <td valign="top" align="left" style="padding: 27px 0 27px 20px;font-size:15px;line-height:1.2em;color:#559bc6 !important">
-                                                <a style="text-decoration:none;line-height:1.2em;color:#ffffff" href="#">Contact Us</a>
+                                                <a class="contact-text1" style="text-decoration:none;line-height:1.2em;color:#ffffff" href="#">Contact Us</a>
                                                 <span> &nbsp;&nbsp; | &nbsp;&nbsp; </span> <!--NBSP is used here to create a space between two words without going to the next line-->
-                                                <a style="text-decoration:none;line-height:1.2em;color:#ffffff" href="#">Book an Appointment</a>
+                                                <a class="contact-text2" style="text-decoration:none;line-height:1.2em;color:#ffffff" href="#">Book an Appointment</a>
                                                 <span> &nbsp;&nbsp; | &nbsp;&nbsp; </span>
-                                                <a style="text-decoration:none;line-height:1.2em;color:#ffffff" href="#">Find a Branch</a>
+                                                <a class="contact-text3" style="text-decoration:none;line-height:1.2em;color:#ffffff" href="#">Find a Branch</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -337,16 +322,16 @@
                             <!--Start BMO/Air Miles CPL Row-->
                             <tr>
                                 <td valign="top">
-                                    <table class="cpl" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="cpl" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td valign="top" align="center">
-                                                <table width="600" style="width:600px;margin:0px" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                <table width="100%" style="width:100%;margin:0px" border="0" align="center" cellpadding="0" cellspacing="0">
                                                     <tr>
                                                         <td valign="top">
                                                             <table width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
                                                                 <tr>
                                                                     <td width="20" valign="bottom" style="width:20px"></td>
-                                                                    <td width="560" valign="top" style="min-width:560px;width:560px">
+                                                                    <td width="560" valign="top" style="width:560px">
                                                                         <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
                                                                             <tr>
                                                                                 <td valign="top" style="padding: 28px 0 0 0">
@@ -460,7 +445,7 @@
                             <!--Start Footer Row-->
                             <tr>
                                 <td>
-                                    <table class="footer" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="footer" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td style="font-size:11px;padding:5px 20px 10px 20px;line-height:1.2em;color:#585858">
                                                 This message is sent to you by BMO Financial Group. We will never send you an email
